@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+/*
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+Font size (inputs): 32px
+
+font-family: 'Poppins', sans-serif;
+
+*/
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    width: 630px;
+    height: 500px;
+    border-radius: 1.5rem 1.5rem 9rem 1.5rem;
+    padding: 2rem 2.5rem;
+}
+
+.date-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    display: block;
+    width: 120px;
+    height: 55px;
+    margin-top: 0.3rem;
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 86%);
+    padding: 1rem;
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+.input-error {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error-msg {
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
+}
+
+hr {
+    border-top: 1px solid hsl(0, 0%, 86%);
+    border-bottom: none;
+    margin-top: 2.5rem;
+}
+
+.submit-btn {
+    background-color: hsl(259, 100%, 65%);
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    float: right;
+    margin-top: -2.5rem;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.output-container {
+    margin-top: 2rem;
+}
+
+.output-container p {
+    font-size: 75px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 75px;
+    color: hsl(0, 0%, 8%);
+}
+
+.output-container p span {
+    color: hsl(259, 100%, 65%);
+    margin-right: 5px;
+}
+
+/* Responsiveness */
+@media (min-width:425px) and (max-width: 650px) {
+    body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    main {
+        width: 100%;
+        padding: 2rem 1rem;
+        position: relative;
+    }
+
+    .date-container{
+        gap: 1rem;
+    }
+
+    input {
+        width: 100px;
+        height: 45px;
+        font-size: 20px;
+        padding: 0.8rem;
+    }
+
+    hr {
+        margin-top: 3.5rem;
+    }
+
+    .submit-btn {
+        width: 55px;
+        height: 55px;
+        margin-top: -1.5rem;
+        position: absolute;
+        top: 33.5%;
+        left: 41%;
+    }
+
+    .submit-btn>img {
+        height: 27px;
+        width: 27px;
+    }
+
+    .output-container {
+        margin-top: 3rem;
+    }
+
+    .output-container>p {
+        font-size: 55px;
+    }
+
+}
+
+@media (max-width: 424px) {
+    body {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        padding: 2rem 1rem;
+        position: relative;
+        border-radius: 1.5rem 1.5rem 5rem 1.5rem;
+    }
+
+    .date-container{
+        gap: 0.7rem;
+    }
+
+    label {
+        font-size: 10px;
+    }
+
+    input {
+        width: 80px;
+        height: 45px;
+        font-size: 17px;
+        padding: 0.8rem;
+        margin-top: 0.1rem;
+    }
+
+    .error-msg {
+        font-size: 8px;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 0.5rem;
+    }
+
+    hr {
+        margin-top: 3.5rem;
+    }
+
+    .submit-btn {
+        width: 55px;
+        height: 55px;
+        margin-top: -1.5rem;
+        position: absolute;
+        top: 33.5%;
+        left: 41%;
+    }
+
+    .submit-btn>img {
+        height: 27px;
+        width: 27px;
+    }
+
+    .output-container {
+        margin-top: 3rem;
+    }
+
+    .output-container>p {
+        font-size: 40px;
+    }
+}

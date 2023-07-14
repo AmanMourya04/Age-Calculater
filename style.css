@@ -1,0 +1,104 @@
+body {
+  background-color: hsl(0, 0%, 86%);
+}
+
+.cont2 {
+  margin-bottom: 2rem;
+}
+
+.cont1 {
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 20%;
+  background-color: white;
+  padding: 4%;
+  border-radius: 5% 5% 40%;
+}
+
+.cont3 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cont4 {
+  color: hsla(259, 100%, 41%, 0.978);
+}
+
+.form-control {
+  border-width: 2px;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.danger {
+  border-color: red;
+}
+
+.form-control:focus {
+  border-color: purple;
+  box-shadow: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-label {
+  color: #6c757d;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+}
+
+.danger2 {
+  color: red;
+}
+
+.cont5 {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.btn1 {
+  position: absolute;
+  top: 38%;
+  right: 27%;
+}
+
+#primary {
+  fill: #854dff;
+}
+
+.btn1:hover #primary {
+  fill: hsl(0, 0%, 8%);
+}
+@media (max-width: 500px) {
+  .cont1 {
+    width: 70%;
+  }
+
+  .btn1 {
+    width: 80px;
+    right: 39%;
+  }
+}
+
+@media (max-width: 375px) {
+  .cont1 {
+    width: 90%;
+  }
+}
